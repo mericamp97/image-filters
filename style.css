@@ -1,0 +1,129 @@
+canvas {
+  border: 1px solid black; /* Optional: Add a border for visual clarity */
+  display: block;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+h1 {
+    color: white;
+    font-size: 3em;
+    background-color: black;
+    border: 5px solid black;
+    text-align: center;
+    font-family: system-ui;
+}
+
+p {
+  font-family: system-ui;
+  font-weight: bold;
+  color: white;
+}
+
+input {
+  font-family: system-ui;
+}
+
+#masterMagicFilter {
+  background: black;
+  color: #fff;
+  border-radius: 6px;
+   border: 2px;
+  border-style: solid;
+  border-color: BlueViolet;
+  font-size: 16px;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+
+#masterRedFilter {
+  background: black;
+  color: #fff;
+  border-radius: 6px;
+  border: 2px;
+  border-style: solid;
+  border-color: crimson;
+  font-size: 16px;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+
+#masterMixFilter {
+  background: black;
+  color: #fff;
+  border-radius: 6px;
+  border: 2px;
+  border-style: solid;
+  border-color: DarkCyan;
+  font-size: 16px;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+
+#masterJailFilter {
+  background: black;
+  color: #fff;
+  border-radius: 6px;
+  border: 2px;
+  border-style: solid;
+  border-color: rgb(234,54,149);
+  font-size: 16px;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+
+#masterBlurFilter {
+  background: black;
+  color: #fff;
+  border-radius: 6px;
+  border: 2px;
+  border-style: solid;
+  border-color: #0009FF;
+  font-size: 16px;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+
+#clear {
+  background: black;
+  color: #fff;
+  border-radius: 6px;
+  border: 2px;
+  border-style: solid;
+  border-color: fuchsia;
+  font-size: 16px;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+
+#doMagic {
+  background: black;
+  color: #fff;
+  border-radius: 4px;
+  border: 2px;
+  border-style: solid;
+  border-color: BlueViolet;
+  font-size: 12px;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+
+#mix {
+  background: black;
+  color: #fff;
+  border-radius: 4px;
+  border: 2px;
+  border-style: solid;
+  border-color: DarkCyan;
+  font-size: 12px;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+
+
+body {
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/83/818/353/the-sun-mountains-music-star-wallpaper-preview.jpg');
+  background-size: cover;
+}
+

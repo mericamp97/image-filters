@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css" />
+    <title>background</title>
+    <script src="main.js"></script>
+</head>
+    <body>
+    
+
+
+        <script src = "https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+
+        <h1 id="t1">🙀 Beautify your photos like it was 2k! :D </h1>
+        
+        <p> THIS IS YOUR INPUT: </p>
+        
+        <p> <canvas id="canvas1" onmousedown = "startPaint()" onmousemove = "doPaint(event)" onmouseup ="endPaint()"></p> 
+        
+        <p> YOUR OUTPUT WILL BE SHOWN HERE: </p>
+        
+        <p> </canvas> <canvas id="canvas2"> </canvas> </p>
+        
+        <p> Upload File <input type = "file" id="input" accept="image/*" multiple = "false" onchange = "uploadImage()" /> </p>
+        
+        <!--In this paragraph I will have all the buttons for the different filters. Some (like the magic fitler) will require more input from the user. Other will just work directly-->
+        <p id="masterButtons"> 
+          <!--Magic Filter-->
+          <input type = "button" value = "Magic Filter" class="filterButton" id="masterMagicFilter" onclick = "showButtonsMagic()" /> 
+          <!--Red Filter-->
+          <input type = "button" value = "Make Red" id="masterRedFilter" onclick = "makeRed()" /> 
+          <!--Mix Images!-->
+          <input type = "button" value = "Mix Picture" id="masterMixFilter" onclick = "showButtonsMix()" />
+            <!--Send to Jail!-->
+          <input type = "button" value = "Send to Jail" id="masterJailFilter" onclick = "sendToJail()" />
+          
+          <!--Breach the Simulation-->
+          <input type = "button" value = "Blur it" id="masterBlurFilter" onclick = "blurThis()" />
+          
+        
+        </p>
+        
+        <!--Division for Magic Filter-->
+        <div id="divisionMagic" style="display: none;"> 
+        <p> Chose a color that is very different from the rest of the color palette. Then paint over the part of the photo that you want to highlight. The rest of the photo will be converted to grey-scale </p>
+        
+        
+        <p> Brush Color <input type="color" id="input_color" value="#03fc13" onchange="setColor(this.value)" /> <p id="try"> 
+          color: <output id="colorOutput"></output>
+        </p> <p> Brush Size <input type="range" id="input_size" min = 1 max = 50 value=20 onchange="resizeBrush(this.value)" />  <output id="sizeOutput">20</output></p> 
+        <input type = "button" id="doMagic" value = "Do Magic!" onclick = "doMagic()"/> </p>
+        
+        </div>
+        
+        <!--Division for Mix Pictures-->
+        
+        <div id="divisionMix" style="display: none;" > 
+        <p> This filter will mix your photo with another one. Upload a second image for mixing! </p>
+        <p> Upload File <input type = "file" id="inputMix" accept="image/*" multiple = "false" onchange = "uploadImageMix()" /> </p>
+        <p>  <input type = "button" id="mix" value = "Mix Images" onclick = "mixImages()"/> </p>
+        </div>
+        
+        
+        <p> <input type = "button" id="clear" value = "Clear Canvas" onclick = "clearCanvas()"/>  </p>
+        
+        
+    </body>
+</html>
