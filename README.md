@@ -1,6 +1,6 @@
 # Project Overview
 This project is a web-based application that allows users to apply various filters to their images. The application is built using HTML, CSS, and JavaScript.
-The website uses "SimpleImage.js" library to manipulate and render images on HTML canvases. The user interface, styled with CSS, provides buttons and input elements to trigger JavaScript functions for filters, using both mouse interactions and HTML input elements for customization.
+The website uses "SimpleImage.js" library to manipulate and render images on HTML canvases. The user interface, styled with CSS, provides buttons and input elements to trigger JavaScript functions for filters, using both mouse interactions and HTML input elements for customization. You can find a demo in the following link: https://codepen.io/Meri-C/full/NWEQGrq
 
 # Features
 - **Upload Image:** Users can upload images for editing.
